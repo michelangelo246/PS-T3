@@ -29,6 +29,38 @@ int pegaValor(FILE *arq)
 	return retorno;
 }
 
+int Verifica_Validade_Data(tipo_data_info *data, tipo_data_atual *data_atual)
+{
+    if(data->ano < data_atual->ano_atual)
+    {
+        printf("\n\nDATA DE DISPONIBILIDADE NAO PERMITIDA!\n");
+        printf("E necessario que a data da disponibilidade seja maior ou igual a atual\n");
+        printf("Disponibilidade nao sera armazenada!\n\n");
+        return 0;
+    }
+    if(data->ano == data_atual->ano_atual)
+    {
+        if(data->mes < data_atual->mes_atual)
+        {
+            printf("\n\nDATA DE DISPONIBILIDADE NAO PERMITIDA!\n");
+            printf("E necessario que a data da disponibilidade seja maior ou igual a atual\n");
+            printf("Disponibilidade nao sera armazenada!\n\n");
+            return 0;
+        }
+        if(data->mes == data_atual->mes_atual)
+        {
+            if(data->dia < data_atual->dia_atual)
+            {
+                printf("\n\nDATA DE DISPONIBILIDADE NAO PERMITIDA!\n");
+                printf("E necessario que a data da disponibilidade seja maior ou igual a atual\n");
+                printf("Disponibilidade nao sera armazenada!\n\n");
+                return 0;
+            }
+        }
+    }
+    return 1;
+}
+
 int Analisa_Bissexto(int ano)
 {
     if ((ano%4 == 0 && ano%100 != 0)|| (ano%400 == 0))
@@ -46,11 +78,11 @@ int Ultimo_Dia_Mes(int mes, int ano)
     case 4:case 6:case 9:case 11:
         return 30;
         break;
-        
+
     case 1:case 3:case 5:case 7:case 8:case 10:case 12:
         return 31;
         break;
-        
+
     case 2:
         if(Analisa_Bissexto(ano) == 1)
         {
@@ -78,7 +110,7 @@ int Formata_Dia(tipo_data_info *data)
     dia = data->dia;
     mes = data->mes;
     ano = data->ano;
-    
+
     bissexto = Analisa_Bissexto(ano);
     switch(mes)
     {
@@ -130,14 +162,14 @@ int Dia_Semana(tipo_data_info *data)
     int d;
     int x;
     int ano;
-    
+
     c = data->mes;
     x = data->dia;
     ano = data->ano;
     a = ano - 1900;
     b = a/4;
     d = x-1;
-    
+
     if ((Analisa_Bissexto(ano) == 1)&&(x <= 60))
     {
         b--;
@@ -166,7 +198,7 @@ int Dia_Semana(tipo_data_info *data)
         c = 5;
         break;
     }
-    
+
     return ((a + b + c + d)%7);
 }
 
@@ -179,7 +211,7 @@ int Numero_Semana(char *dia_semana)
         {
             return 0;
         }
-        else 
+        else
         {
             if(dia_semana[2] == 'x')
             {
@@ -220,23 +252,23 @@ void Estende_Disponibilidade(tipo_disponibilidade_local* p1_disp, tipo_disponibi
     int aux_dia_semana; /*Ponteiro para auxiliar comparacao do dia a ser expandido, contem o dia do mes analisado*/
     tipo_data_info *aux_data; /*copia as informacoes do no disp recebido para ser reproduzido pelos outros dias a serem expandidos*/
     tipo_disponibilidade_local *p1; /*ptr auxiliar para encadear a lista de disponibilidades*/
-    
-    
+
+
     aux_data = (tipo_data_info *)malloc(sizeof(tipo_data_info));
     ano = data->ano;
-    
+
     aux_data->mes = data->mes;
     aux_data->ano = data->ano;
     aux_data->dia = 1;
-    
+
     aux_disp_semana = Numero_Semana(p1_disp->dia_semana);
-    
-    
+
+
     i = Ultimo_Dia_Mes(data->mes,ano);
     while(aux_data->dia < i) /*caminha todos os dias do mes a partir do dia 0 expandindo para o dia da semana escolhido*/
     {
         aux_dia_semana = Dia_Semana(aux_data);
-        
+
         if( aux_dia_semana == aux_disp_semana )
         {
             p1 = (tipo_disponibilidade_local*)malloc(sizeof(tipo_disponibilidade_local));
@@ -254,16 +286,33 @@ void Estende_Disponibilidade(tipo_disponibilidade_local* p1_disp, tipo_disponibi
 
 tipo_local* Trata_Localidade(tipo_local *pinicio)
 {
-    char c;
     int i;
     int sair;
+    int data_valida;
+    char c;
+    char year[5];
+	char month[3];
+	char day[3];
+    tipo_data_atual *data_atual;
     tipo_data_info *data;
     FILE *arq;
     tipo_local *p1_local;
     tipo_disponibilidade_local *pinicio_disp;
     tipo_disponibilidade_local *p1_disp;
+    time_t current_time;
+	struct tm *time_info;
 
+    data_atual = (tipo_data_atual*)malloc(sizeof(tipo_data_atual));
     p1_local = pinicio;
+    data_valida = 1;
+    current_time = time(NULL);
+	time_info = localtime(&current_time);
+	strftime(year, 5, "%Y", time_info);
+	strftime(month, 3, "%m", time_info);
+	strftime(day, 3, "%d", time_info);
+    data_atual->ano_atual = atoi(year);
+	data_atual->mes_atual = atoi(month);
+	data_atual->dia_atual = atoi(day);
 
     while(p1_local)/*Enquanto houver local*/
     {
@@ -278,9 +327,10 @@ tipo_local* Trata_Localidade(tipo_local *pinicio)
 
         while(!sair)/*Enquanto nao quebrar toda a disponibilidade bruta*/
         {
+            data_valida = 1;
             p1_disp = (tipo_disponibilidade_local*)malloc(sizeof(tipo_disponibilidade_local));
             data = (tipo_data_info*)malloc(sizeof(tipo_data_info));
-            
+
             for(i=0;(c = fgetc(arq))!=',';i++)
             {
                 p1_disp->dia_semana[i] = c;
@@ -292,6 +342,9 @@ tipo_local* Trata_Localidade(tipo_local *pinicio)
             data->mes = pegaValor(arq);
             data->ano = pegaValor(arq);
             p1_disp->dia = Formata_Dia(data);
+            p1_disp->ano = data->ano;
+
+            data_valida = Verifica_Validade_Data(data,data_atual);
 
             Pula_Espaco(arq);
             p1_disp->inicio = pegaValor(arq)*60;
@@ -300,17 +353,19 @@ tipo_local* Trata_Localidade(tipo_local *pinicio)
             p1_disp->fim += pegaValor(arq);
             p1_disp->duracao = p1_disp->fim - p1_disp->inicio;
 
-            
-            if(data->dia == 0) /*se tiver que expandir*/
+            if(data_valida) /*se a data for maior que a atual*/
             {
-                p1_disp->prox = NULL;
-                Estende_Disponibilidade(p1_disp,&pinicio_disp,data);
-                free(p1_disp);
-            }
-            else /*se nao tiver que expandir*/
-            {
-                p1_disp->prox = pinicio_disp;
-                pinicio_disp = p1_disp;
+                if(data->dia == 0) /*se tiver que expandir*/
+                {
+                    p1_disp->prox = NULL;
+                    Estende_Disponibilidade(p1_disp,&pinicio_disp,data);
+                    free(p1_disp);
+                }
+                else /*se nao tiver que expandir*/
+                {
+                    p1_disp->prox = pinicio_disp;
+                    pinicio_disp = p1_disp;
+                }
             }
             if((c = fgetc(arq)) == EOF)
             {

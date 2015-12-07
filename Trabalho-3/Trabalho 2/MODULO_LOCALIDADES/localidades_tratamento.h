@@ -22,6 +22,7 @@ Autor: Michelangelo.
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 #include "localidades_leitura.h"
 
 
@@ -34,6 +35,14 @@ typedef struct Tipo_Data_Info
     int ano; /*aaaa*/
 
 }tipo_data_info;
+
+typedef struct Tipo_Data_Atual
+{
+    int dia_atual;
+    int mes_atual;
+    int ano_atual;
+
+}tipo_data_atual;
 
 
 /* Funcoes do modulo */

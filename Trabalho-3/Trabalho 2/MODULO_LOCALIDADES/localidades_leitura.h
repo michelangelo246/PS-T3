@@ -40,6 +40,7 @@ typedef struct Tipo_Disponibilidade_Local
     int duracao;    /*em minutos*/
     int inicio;     /*em minutos*/
     int fim;        /*em minutos*/
+    int ano;        /*ano da disponibilidade*/
     struct Tipo_Disponibilidade_Local *prox;
 
 }tipo_disponibilidade_local;

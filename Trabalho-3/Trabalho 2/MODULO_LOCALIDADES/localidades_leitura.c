@@ -69,7 +69,7 @@ tipo_local* Le_Localidade(void)
 
     sair = 0;
     pinicio = NULL;
-    arq = fopen("MODULO_LOCALIDADES/arquivo_local.txt","r");
+    arq = fopen("arquivo_local.txt","r");
     if(!arq)
     {
         printf("erro ao abrir o arquivo");

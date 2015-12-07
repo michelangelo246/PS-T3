@@ -3,4 +3,4 @@ Endereco: PAT 0987
 Disponibilidade: Qui, 03/09/2015, 7:00-9:30; Qua, 00/10/2015, 14:00-16:30
 Nome: Anfiteatro A
 Endereco: CIC/EST - UnB
-Disponibilidade: Ter, 01/09/2015, 8:00-9:30; Sex, 09/10/2015, 14:00-15:00
+Disponibilidade: Ter, 01/09/2016, 8:00-9:30; Sex, 09/12/2015, 14:00-15:00

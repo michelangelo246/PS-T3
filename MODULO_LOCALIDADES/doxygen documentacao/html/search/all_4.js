@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['imprime_5flocalidades',['Imprime_Localidades',['../localidades__persistencia_8c.html#afd2f34dab40814a105894d828305f7dd',1,'Imprime_Localidades(tipo_local *p1):&#160;localidades_persistencia.c'],['../localidades__persistencia_8h.html#afd2f34dab40814a105894d828305f7dd',1,'Imprime_Localidades(tipo_local *p1):&#160;localidades_persistencia.c']]],
+  ['inicia_5fponteiro',['Inicia_Ponteiro',['../localidades__leitura_8c.html#a0af5b8f19bb6a4759fc420b411845e66',1,'Inicia_Ponteiro(void):&#160;localidades_leitura.c'],['../localidades__leitura_8h.html#a0af5b8f19bb6a4759fc420b411845e66',1,'Inicia_Ponteiro(void):&#160;localidades_leitura.c']]],
+  ['inicializa_5fpilha_5fpalestrados',['Inicializa_Pilha_Palestrados',['../localidades__persistencia_8c.html#a442eefadeab35d38550a3adf8d87e9a6',1,'Inicializa_Pilha_Palestrados():&#160;localidades_persistencia.c'],['../localidades__persistencia_8h.html#a442eefadeab35d38550a3adf8d87e9a6',1,'Inicializa_Pilha_Palestrados():&#160;localidades_persistencia.c']]],
+  ['inicio',['inicio',['../struct_tipo___disponibilidade___local.html#a73f53b0349bb995757a60c9c0bde3569',1,'Tipo_Disponibilidade_Local']]],
+  ['insere_5fpilha_5fpalestrados',['Insere_Pilha_Palestrados',['../localidades__persistencia_8c.html#a0bd6bff8f4e4a35b9992d252278aa589',1,'Insere_Pilha_Palestrados(tipo_pilha_palestrados **pinicio, char *nome_recebido):&#160;localidades_persistencia.c'],['../localidades__persistencia_8h.html#a0bd6bff8f4e4a35b9992d252278aa589',1,'Insere_Pilha_Palestrados(tipo_pilha_palestrados **pinicio, char *nome_recebido):&#160;localidades_persistencia.c']]]
+];

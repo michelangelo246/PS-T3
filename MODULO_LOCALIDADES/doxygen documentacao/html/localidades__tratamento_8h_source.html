@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Componente de localidade: Código-Fonte de localidades_tratamento.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico-localizacao.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Componente de localidade
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+   <div id="projectbrief">Modulos responsaveis pela organização das informações das localidades.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;Dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">localidades_tratamento.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="localidades__tratamento_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*********************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">                Modulo de tratamento de localidades</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">Esse modulo e responsavel por criar uma lista com as informacoes</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">das localidades todas tratadas, organizadas e refinadas, assim como</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">de suas respectivas disponibilidades.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">    -------------------------------------------------------------</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">    Entrada: Saida do modulo localidades_leitura, contendo uma lista</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">    com todos os locais e suas respectivas informacoes e disponibilidades</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">    todas em formato ainda bruto.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">    Saida: Ponteiro para inicio de uma lista contendo todas as</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">    informacoes das localidades tratadas e organizadas.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">Autor: Michelangelo.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">**********************************************************************/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef LOCALIDADES_TRATAMENTO_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define LOCALIDADES_TRATAMENTO_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="localidades__leitura_8h.html">localidades_leitura.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/* Estruturas do modulo */</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_tipo___data___info.html">   30</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_tipo___data___info.html">Tipo_Data_Info</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_tipo___data___info.html#a3d1171ac670a8e8a672c481f22d1fa9f">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_tipo___data___info.html#a3d1171ac670a8e8a672c481f22d1fa9f">dia</a>; <span class="comment">/*dd*/</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_tipo___data___info.html#a9fc86758220eae0e735655f81fd9d9bc">   33</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_tipo___data___info.html#a9fc86758220eae0e735655f81fd9d9bc">mes</a>; <span class="comment">/*mm*/</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_tipo___data___info.html#ac404d93cbf0169fd9e89edc17d0c5572">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_tipo___data___info.html#ac404d93cbf0169fd9e89edc17d0c5572">ano</a>; <span class="comment">/*aaaa*/</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}<a class="code" href="localidades__tratamento_8h.html#ada5ebaf0a0fd070b236f91aae8c93a47">tipo_data_info</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">/* Funcoes do modulo */</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> <a class="code" href="localidades__tratamento_8h.html#a98d3c5ae406f78af386478668df9c381">Pula_Espaco</a>(FILE *arq);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">int</span> <a class="code" href="localidades__tratamento_8h.html#a4a7af3a69f90f6f4ae1d6b67a89a5d68">pegaValor</a>(FILE *arq);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">int</span> <a class="code" href="localidades__tratamento_8h.html#a5fd4338085ee6c1443803f29b88ee1b3">Analisa_Bissexto</a>(<span class="keywordtype">int</span> ano);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">int</span> <a class="code" href="localidades__tratamento_8h.html#a7cc149ee5a464eaf609e40f366053ec0">Ultimo_Dia_Mes</a>(<span class="keywordtype">int</span> mes, <span class="keywordtype">int</span> ano);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">int</span> <a class="code" href="localidades__tratamento_8h.html#a9e639e5cf0e39543d3b13b8aa885ca7e">Formata_Dia</a>(<a class="code" href="struct_tipo___data___info.html">tipo_data_info</a> *data);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">int</span> <a class="code" href="localidades__tratamento_8h.html#a3fe09e8302b5a50e9b6d9cc76d3fab4c">Dia_Semana</a>(<a class="code" href="struct_tipo___data___info.html">tipo_data_info</a> *data);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">int</span> <a class="code" href="localidades__tratamento_8h.html#aa4d0fed5d0b2f81f80660a58cbe20cd6">Numero_Semana</a>(<span class="keywordtype">char</span> *dia_semana);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">void</span> <a class="code" href="localidades__tratamento_8h.html#a2afba1d3d03c17d29c1e5e7f4e7d1191">Estende_Disponibilidade</a>(<a class="code" href="struct_tipo___disponibilidade___local.html">tipo_disponibilidade_local</a>* p1_disp, <a class="code" href="struct_tipo___disponibilidade___local.html">tipo_disponibilidade_local</a> **pinicio_disp, <a class="code" href="struct_tipo___data___info.html">tipo_data_info</a> *data);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<a class="code" href="struct_tipo___local.html">tipo_local</a>* <a class="code" href="localidades__tratamento_8h.html#aa46be5b9ebf7b1c53cae751062fee3d0">Trata_Localidade</a>(<a class="code" href="struct_tipo___local.html">tipo_local</a>* pinicio);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif // LOCALIDADES_TRATAMENTO_H</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="ttc" id="localidades__tratamento_8h_html_a4a7af3a69f90f6f4ae1d6b67a89a5d68"><div class="ttname"><a href="localidades__tratamento_8h.html#a4a7af3a69f90f6f4ae1d6b67a89a5d68">pegaValor</a></div><div class="ttdeci">int pegaValor(FILE *arq)</div><div class="ttdoc">Descricao: recebe um arquivo apontando para: um caractere antes de uma sequencia de numeros que vao s...</div><div class="ttdef"><b>Definition:</b> localidades_tratamento.c:8</div></div>
+<div class="ttc" id="struct_tipo___local_html"><div class="ttname"><a href="struct_tipo___local.html">Tipo_Local</a></div><div class="ttdef"><b>Definition:</b> localidades_leitura.h:26</div></div>
+<div class="ttc" id="localidades__leitura_8h_html"><div class="ttname"><a href="localidades__leitura_8h.html">localidades_leitura.h</a></div></div>
+<div class="ttc" id="localidades__tratamento_8h_html_aa4d0fed5d0b2f81f80660a58cbe20cd6"><div class="ttname"><a href="localidades__tratamento_8h.html#aa4d0fed5d0b2f81f80660a58cbe20cd6">Numero_Semana</a></div><div class="ttdeci">int Numero_Semana(char *dia_semana)</div><div class="ttdoc">Descricao: le a string do dia da semana e calcula o dia que ela representa [0-6]. ...</div><div class="ttdef"><b>Definition:</b> localidades_tratamento.c:173</div></div>
+<div class="ttc" id="localidades__tratamento_8h_html_a3fe09e8302b5a50e9b6d9cc76d3fab4c"><div class="ttname"><a href="localidades__tratamento_8h.html#a3fe09e8302b5a50e9b6d9cc76d3fab4c">Dia_Semana</a></div><div class="ttdeci">int Dia_Semana(tipo_data_info *data)</div><div class="ttdoc">Descricao: baseado nas informacoes recebidas, calcula o dia da semana correspondente. </div><div class="ttdef"><b>Definition:</b> localidades_tratamento.c:125</div></div>
+<div class="ttc" id="localidades__tratamento_8h_html_a7cc149ee5a464eaf609e40f366053ec0"><div class="ttname"><a href="localidades__tratamento_8h.html#a7cc149ee5a464eaf609e40f366053ec0">Ultimo_Dia_Mes</a></div><div class="ttdeci">int Ultimo_Dia_Mes(int mes, int ano)</div><div class="ttdoc">Descricao: recebe um inteiro que representa o mes [1-12] e retorna a quantidade de dias que aquele me...</div><div class="ttdef"><b>Definition:</b> localidades_tratamento.c:42</div></div>
+<div class="ttc" id="struct_tipo___data___info_html"><div class="ttname"><a href="struct_tipo___data___info.html">Tipo_Data_Info</a></div><div class="ttdef"><b>Definition:</b> localidades_tratamento.h:30</div></div>
+<div class="ttc" id="localidades__tratamento_8h_html_a9e639e5cf0e39543d3b13b8aa885ca7e"><div class="ttname"><a href="localidades__tratamento_8h.html#a9e639e5cf0e39543d3b13b8aa885ca7e">Formata_Dia</a></div><div class="ttdeci">int Formata_Dia(tipo_data_info *data)</div><div class="ttdoc">Descricao: Recebe o ptr contendo o dia o mes e o ano de interesse e calcula (considerando também os a...</div><div class="ttdef"><b>Definition:</b> localidades_tratamento.c:69</div></div>
+<div class="ttc" id="struct_tipo___data___info_html_ac404d93cbf0169fd9e89edc17d0c5572"><div class="ttname"><a href="struct_tipo___data___info.html#ac404d93cbf0169fd9e89edc17d0c5572">Tipo_Data_Info::ano</a></div><div class="ttdeci">int ano</div><div class="ttdef"><b>Definition:</b> localidades_tratamento.h:34</div></div>
+<div class="ttc" id="struct_tipo___disponibilidade___local_html"><div class="ttname"><a href="struct_tipo___disponibilidade___local.html">Tipo_Disponibilidade_Local</a></div><div class="ttdef"><b>Definition:</b> localidades_leitura.h:37</div></div>
+<div class="ttc" id="localidades__tratamento_8h_html_ada5ebaf0a0fd070b236f91aae8c93a47"><div class="ttname"><a href="localidades__tratamento_8h.html#ada5ebaf0a0fd070b236f91aae8c93a47">tipo_data_info</a></div><div class="ttdeci">struct Tipo_Data_Info tipo_data_info</div></div>
+<div class="ttc" id="localidades__tratamento_8h_html_a5fd4338085ee6c1443803f29b88ee1b3"><div class="ttname"><a href="localidades__tratamento_8h.html#a5fd4338085ee6c1443803f29b88ee1b3">Analisa_Bissexto</a></div><div class="ttdeci">int Analisa_Bissexto(int ano)</div><div class="ttdoc">Descricao: recebe um ano e verifica se esse e bissexto ou nao. </div><div class="ttdef"><b>Definition:</b> localidades_tratamento.c:32</div></div>
+<div class="ttc" id="struct_tipo___data___info_html_a9fc86758220eae0e735655f81fd9d9bc"><div class="ttname"><a href="struct_tipo___data___info.html#a9fc86758220eae0e735655f81fd9d9bc">Tipo_Data_Info::mes</a></div><div class="ttdeci">int mes</div><div class="ttdef"><b>Definition:</b> localidades_tratamento.h:33</div></div>
+<div class="ttc" id="localidades__tratamento_8h_html_aa46be5b9ebf7b1c53cae751062fee3d0"><div class="ttname"><a href="localidades__tratamento_8h.html#aa46be5b9ebf7b1c53cae751062fee3d0">Trata_Localidade</a></div><div class="ttdeci">tipo_local * Trata_Localidade(tipo_local *pinicio)</div><div class="ttdoc">Descricao: Trata as localidades da lista recebida, criando as disponibilidades pertencentes a cada lo...</div><div class="ttdef"><b>Definition:</b> localidades_tratamento.c:255</div></div>
+<div class="ttc" id="localidades__tratamento_8h_html_a98d3c5ae406f78af386478668df9c381"><div class="ttname"><a href="localidades__tratamento_8h.html#a98d3c5ae406f78af386478668df9c381">Pula_Espaco</a></div><div class="ttdeci">void Pula_Espaco(FILE *arq)</div><div class="ttdoc">Descricao: consome um caractere (&#39; &#39; no caso.) do arquivo recebido. </div><div class="ttdef"><b>Definition:</b> localidades_tratamento.c:3</div></div>
+<div class="ttc" id="localidades__tratamento_8h_html_a2afba1d3d03c17d29c1e5e7f4e7d1191"><div class="ttname"><a href="localidades__tratamento_8h.html#a2afba1d3d03c17d29c1e5e7f4e7d1191">Estende_Disponibilidade</a></div><div class="ttdeci">void Estende_Disponibilidade(tipo_disponibilidade_local *p1_disp, tipo_disponibilidade_local **pinicio_disp, tipo_data_info *data)</div><div class="ttdoc">Descricao: recebe um no da lista de disponibilidade com o campo data: 00, e expande as informacoes da...</div><div class="ttdef"><b>Definition:</b> localidades_tratamento.c:215</div></div>
+<div class="ttc" id="struct_tipo___data___info_html_a3d1171ac670a8e8a672c481f22d1fa9f"><div class="ttname"><a href="struct_tipo___data___info.html#a3d1171ac670a8e8a672c481f22d1fa9f">Tipo_Data_Info::dia</a></div><div class="ttdeci">int dia</div><div class="ttdef"><b>Definition:</b> localidades_tratamento.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

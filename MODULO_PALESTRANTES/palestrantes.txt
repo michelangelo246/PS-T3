@@ -1,0 +1,12 @@
+Nome: Karl Marx
+Disponibilidade: ter, 06/10/15, 10:00 - 12:00; qua, 00/11/15, 8:00-10:00; qui, 00/11/15, 10:00-11:00
+Nome: Henry Ford
+Disponibilidade: qui, 15/10/15, 14:00 - 17:30; sex, 00/12/15, 9:30 - 11:30; qui, 00/12/15, 11:00-12:00
+Nome: Immanuel Kant
+Disponibilidade: sex, 06/11/15, 12:00 - 16:00; qua, 11/11/15, 8:00-18:00
+Nome: Hans Kelsen
+Disponibilidade: Seg, 00/11/2015, 10:00-12:00; Qui, 00/12/2015, 16:30-15:30
+Nome: Albert Einstein
+Disponibilidade:  seg, 16/12/16, 17:00 - 19:00
+Nome: Sr. Ocupado da Silva
+Disponibilidade: ter, 00/09/15

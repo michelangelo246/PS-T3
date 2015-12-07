@@ -1,0 +1,25 @@
+
+-----------------------------------------------
+Local: Anfiteatro A
+Endereco: CIC/EST - UnB
+Disponibilidade Bruta: Ter, 01/09/2016, 8:00-9:30; Sex, 09/12/2015, 14:00-15:00
+Disponibilidade tratada:
+
+	Dia da semana: Sex
+	Dia do ano: 343
+	Inicio: 840
+	Fim: 900
+	Duracao: 60
+
+	Dia da semana: Ter
+	Dia do ano: 245
+	Inicio: 480
+	Fim: 570
+	Duracao: 90
+
+-----------------------------------------------
+Local: Sala 01
+Endereco: PAT 0987
+Disponibilidade Bruta: Qui, 03/09/2015, 7:00-9:30; Qua, 00/10/2015, 14:00-16:30
+Disponibilidade tratada:
+----------------------------------------------

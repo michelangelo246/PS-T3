@@ -1,0 +1,78 @@
+
+| Data	|  Horas Trabalhadas |	       Tipo Tarefa       |
+| 13/10 |        ~3          |  especificacao dos modulos
+|               Descricao da tarefa                      |
+>Junto ao grupo foi discutida a nova modularizacao necessa
+ria para atender as mudancas do trabalho2
+----------------------------------------------------------
+
+| Data	|  Horas Trabalhadas |	       Tipo Tarefa       |
+| 15/10 |        ~3          |  estudar
+|               Descricao da tarefa                      |
+>estudo do modulo localidade pelo qual fiquei responsavel,
+tipos necessarios, saida, entrada, e comunicacao que seria
+realizada com o calendario
+----------------------------------------------------------
+
+| Data	|  Horas Trabalhadas |	       Tipo Tarefa       |
+| 17/10 |        ~5          |  codificacao de modulo
+|               Descricao da tarefa                      |
+>construcao do modulo de definicao dos 3 modulos responsa-
+veis pela localidade: leitura, tratamento e persistencia
+----------------------------------------------------------
+
+| Data	|  Horas Trabalhadas |	       Tipo Tarefa       |
+| 21/10 |        ~3          |  codificacao do modulo
+|               Descricao da tarefa                      |
+>inicio da implementacao do modulo de leitura das locali-
+dades
+----------------------------------------------------------
+
+| Data	|  Horas Trabalhadas |	       Tipo Tarefa       |
+| 22/10 |        ~3          |  estudo do algoritmo
+|               Descricao da tarefa                      |
+>analise das funcionalidades do modulo leitura das locali-
+dades
+----------------------------------------------------------
+
+| Data	|  Horas Trabalhadas |	       Tipo Tarefa       |
+| 23/10 |        ~2          |  modificacao do codigo
+|               Descricao da tarefa                      |
+>modificada as estruturas do modulo de leitura do locali-
+dades para atender mudancas conceituais
+----------------------------------------------------------
+
+| Data	|  Horas Trabalhadas |	       Tipo Tarefa       |
+| 26/10 |        ~4          |  codificacao do modulo
+|               Descricao da tarefa                      |
+>codificacao completa do modulo de leitura das localidades
+----------------------------------------------------------
+
+| Data	|  Horas Trabalhadas |	       Tipo Tarefa       |
+| 28/10 |        ~4          |  estudo do algoritmo
+|               Descricao da tarefa                      |
+>estudo do algoritmo que atendesse as especificacoes nece-
+ssarias para o modulo de tratamento de localidades
+----------------------------------------------------------
+
+| Data	|  Horas Trabalhadas |	       Tipo Tarefa       |
+| 29/10 |        ~3          |  codificacao do modulo
+|               Descricao da tarefa                      |
+>adaptacao do modulo de definicao do modulo de tratamento 
+das localidades
+----------------------------------------------------------
+
+| Data	|  Horas Trabalhadas |	       Tipo Tarefa       |
+| 30/10 |        ~4          |  codificacao do modulo
+|               Descricao da tarefa                      |
+>codificacao das funcoes principais do modulo de tratamen-
+to das localidades
+----------------------------------------------------------
+
+| Data	|  Horas Trabalhadas |	       Tipo Tarefa       |
+| 31/10 |        ~4          |  codificacao do modulo
+|               Descricao da tarefa                      |
+>terminado e analisado todos os dados de retorno de todas 
+as funcoes do modulo de leitura dos locais, refinamento 
+das funcoes e especificacoes das funcionalidades
+----------------------------------------------------------

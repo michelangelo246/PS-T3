@@ -1,0 +1,14 @@
+Aluno: Gabriel Oliveira Taumaturgo.
+Matricula: 14/0140522
+
+
+Dia 6/09 - Criação de contas na plataforma cloud9. Gasto 10 minutos.
+Dia 9/09 - Planejamento das estruturas e lógicas dentro do trabalho. Gasto aproximadamente 1 hora.
+Dia 12/09 - Implementação de palestras.h, palestrantes.h, listapalestras.h, listapalestrantes.h Gasto aproximadamente 4 horas.
+Dia 14/09 - Modificação nas estruturas de lista, para facilitar percorrimento e correção devido a erros nos testes. Gasto uma hora e meia.
+Dia 16/09 - Confeccionamento do Makefile.
+dia 17/09 - Tentativa de implementar persistencia.h, obtive problemas.. . Gasto aproximadamente 6 horas.
+dias 19-21 /09 Implementação dos testes no CUnit para os TADS listas. Gasto cerca de 12hrs.
+dia 30/09 - Criação de funções de criação e destrução para palestrantes, palestras e disponibilidade, 
+reformulação dos cabeçalhos de listas respectivas e separação de palestrantes e disponibilidade. gasto 3h
+dia 1/10 Adaptação das estruturas atuais para as novas. gasto 2h

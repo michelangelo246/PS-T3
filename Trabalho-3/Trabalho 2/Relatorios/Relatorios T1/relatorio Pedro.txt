@@ -1,0 +1,85 @@
+Aluno: Pedro Augusto de Carvalho Mohn
+Matricula: 13/0150479
+
+Data	|Horas trabalhadas	|Tipo Tarefa				|Descricao da tarefa
+
+06/09	|1:00				|Especificar os modulos		| Leitura e analise da especificacao disponibilizada no moodle
+														| Producao de resumo dessa especificacao e producao de 
+														|especificacao preliminar de cada modulo obrigatorio. 
+														| Anotacao de duvidas a serem verificadas com a cliente
+														|e de hipoteses as serem validadas.
+														
+														
+														
+07/09	|1:30				|Configuracao da IDE		| Criacao de conta no ambiente c9.io. O membro Michelangelo criou
+														|o workspace para o trabalho e adicionou essa conta (e a do Gabriel).
+														|Exploramos as opcoes, descobrimos as opcoes e caracteristicas do
+														|compilador da IDE. Criamos a estrutura do projeto, ou seja, as
+														|pastas e arquivos para os modulos obrigatorios. E tambem fizemos a
+														|primeira versao do arquivo README.txt
+														
+														
+														
+08/09	|00:30				|Especificar os modulos		| Reuniao do grupo para discutirmos o que foi entendido da especificacao
+														|e anotar pontos a serem verificados e validados com a cliente
+														
+08/09	|00:10				|Especificar os modulos		| Validacao com a cliente.
+
+
+
+10/09	|00:40				|Especificar os modulos		| Reuniao do grupo para fecharmos a especificacao dos modulos.
+
+10/09	|00:20				|Estudar					| Estudo da documentacao da biclioteca time.h. 
+														|Principal fonte:https://www.kernel.org/doc/man-pages/.
+														
+10/09	|3:00				|Especificar as moduos		| Especificacao de todos os modulos e definicao dos TADs para palestrante,
+														|lista_palestrante, palestra e lista_palestras.
+
+
+
+11/09	|00:30				|Especificar as funcoes		| Especificacao das funcoes do modulo leitura. (arquivo leitura.h).
+
+11/09	|01:30				|Codificar modulo			| Implementacao da funcao que le o arq de palestrantes (arquivo leitura.c).
+
+12/09	|02:00				|Especificacao de testes	|Suite de testes do modulo de leitura
+
+14/09	|01:00				|Estudar					| Analise das funcoes criadas em novos modulos (listapalestrantes.h e .c
+														|e listapalestras.h e .c)
+																												
+14/09	|00:20				|Revisar código do módulo	| Alteracao na funcao que estava implementada
+
+14/09	|00:40				|Codificar módulo			| Implementacao da funcao que le o arq de palestras (arquivo leitura.c).
+
+14/09	|00:20				|Especificar as funcoes		| Especificacao das funcoes do modulo de tratamento de dados. 
+														|(arquivo tratadados.h).
+
+14/09	|00:10				|Estudar					| Estudo de algumas funcoes para tratamento de strings, especialmente strtok
+
+14/09	|04:00				|Especificacao de testes	|Suite de testes do modulo de tratamento de dados
+
+15/09	|01:30				|Codificar modulo			| Implementacao da funcao ConverteDuracaoBruta e da funcao
+														|TrataListaPalestras    (arquivo tratadados.c).
+														
+16/09	|01:00				|Codificar modulo			| Fim da implementacao da funcao ConverteDuracaoBruta e da funcao
+														|TrataListaPalestras e inicio das funcoes para tratar lista de palestrantes
+														|   (arquivo tratadados.c).
+
+
+19/09	|07:00				|Codificar modulo			| Funcoes do modulo tratadados.c e controletempo.c
+
+19/09	|00:30				|Estudar					| Estudo de funcoes para manipular strings e char(ex: sprintf), e mais estudo
+														|das funcoes da time.h ( ex: getdate )
+
+20/09	|01:30				|Revisar código do módulo	| Funcoes do modulo tratadados.c
+
+20/09	|00:30				|Revisar código do módulo	| Funcoes do modulo leitura.c
+
+20/09	|00:30				|Especificar as funcoes		| Especificacao das funcoes do modulo de controle de tempo. 
+
+20/09	|00:10				|Estudar					| Estudo de funcoes da time.h e arquivo exemplo (ead)
+
+20/09	|02:00				|Especificacao de testes	|Suite de testes do modulo controletempo.c
+
+20/09	|02:00				|Codificar modulo			| Funcoes do modulo controletempo.c e persistencia.c
+
+21/09	|02:00				|Revisar código do módulo	| Funcoes do modulo tratadados.c e controletempo.c

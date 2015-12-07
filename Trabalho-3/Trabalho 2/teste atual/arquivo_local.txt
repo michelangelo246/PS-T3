@@ -1,0 +1,15 @@
+Nome: Sala 01
+Endereco: PAT 0987
+Disponibilidade: Qui, 03/11/2015, 7:00-9:30; Qua, 00/11/2015, 14:00-16:30
+Nome: Anfiteatro A
+Endereco: CIC/EST - UnB
+Disponibilidade: Qua, 15/11/2015, 8:00-9:30; Sex, 09/11/2015, 14:00-15:00
+Nome: Anfiteatro 19
+Endereco: CIC/EST - UnB
+Disponibilidade: Seg, 00/11/2015, 8:00-9:30; Sex, 09/11/2015, 14:00-15:00
+Nome: Sala 44 PAT
+Endereco: CIC/EST - UnB
+Disponibilidade: Ter, 00/11/2015, 18:00-19:30; Sex, 09/11/2015, 14:00-15:00
+Nome: Sala 20 PJC
+Endereco: CIC/EST - UnB
+Disponibilidade: Ter, 01/11/2015, 10:00-11:30; Sex, 09/11/2015, 14:00-15:00

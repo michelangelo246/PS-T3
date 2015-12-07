@@ -1,0 +1,37 @@
+Aluno: Pedro Augusto de Carvalho Mohn
+Matricula: 13/0150479
+
+Data	|Horas trabalhadas	|Tipo Tarefa				|Descricao da tarefa
+
+11/10	|3:00				|(Re)especificacao dos 		| Leitura e analise da especificacao disponibilizada no moodle
+							 modulos para nova 			| Producao de resumo dessa especificacao destacando os pontos diferentes 
+						     arquitetura				|entre o TP1 e o TP2. 
+														| Anotacao de duvidas a serem verificadas com a cliente em relacao ao modulo 
+														|persistencia
+														
+														
+														
+12/10	|1:30				|Especificação 				| Especificacao do modulo de leitura e de tratamento de palestrantes
+														
+														
+														
+13/10	|00:30				|Especificar os modulos		| Validacao com a cliente.
+
+
+16/10	|01:40				|Refatoracao de modulo		| Refatoracao do codigo do modulo de leitura (componente palestrante)
+
+18/10	|4:00				|Refatoracao de modulo		| Refatoracao do codigo do modulo de tratamento (componente palestrante)
+														
+														
+22/10	|1:00				|Execucao de testes			| Testes nos modulos de leitura e tratamento. FOram anotados os pontos a serem corrigidos
+
+
+23/10	|2:30				|Revisar codigo				| Correcao dos modulos leitura e tratamento.
+
+24/10	|01:30				|Especificar modulo			| Especificacao do modulo persistencia (componente palestrante)
+
+24/10	|02:00				|Codificar módulo			| Implementacao do modulo persistencia (componente palestrante)
+
+25/10	|02:30				|Codificar modulo			| Implementacao do componente localidade.
+
+01/11	|01:00				|Comentar					| Comentario dos modulos do componente palestrante para utilizar o doxygen

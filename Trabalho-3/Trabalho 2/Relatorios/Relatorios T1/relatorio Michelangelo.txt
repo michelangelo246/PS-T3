@@ -1,0 +1,119 @@
+Aluno: Michelangelo da Rocha Machado
+Matricula: 14/0156089
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 07/09		|		   ~3:00		|  		   Estudar			|
+|		    	  Descrição da Tarefa Realizada					|
+|Analise e organização das ideias apresentadas na especificação |
+|do trabalho. Busca pelo ambiente de implementação utilizado no |
+|construção do projeto. Configuração do ambiente de trabalho 	|
+|junto aos demais integrantes do grupo. Especificação junto aos |
+|demais integrantes do grupo das regras básicas de implementação|
+|coletiva.														|
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 08/09		|		   ~1:40		|  		   Projetar			|
+|		    	  Descrição da Tarefa Realizada					|
+|Reuniao dos membros do grupo para nivelar o entendimento geral |
+|sobre as especificações de requisitos dos modulos e 			|
+|planejamento das estruturas a serem utilizadas na implementação|
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 10/09		|		   ~1:30		|  	Especificar os módulos	|
+|		    	  Descrição da Tarefa Realizada					|
+|Concretização das ideias desenvolvidas no dia anterior.		|
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 10/09		|		   ~1:30		|  		   Projetar			|
+|		    	  Descrição da Tarefa Realizada					|
+|Definição dos métodos de abordagem a serem utilizados nos 		|
+|diferentes modulos.											|
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 12/09		|		   ~2:00		|  Revisar código do módulo	|
+|		    	  Descrição da Tarefa Realizada					|
+|Refinaçao das descriçoes dos modulos de definição. 			|
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 12/09		|		   ~1:30		|  		   Projetar			|
+|		    	  Descrição da Tarefa Realizada					|
+|Criação do arquivo responsável pelo registro de mudancas que 	|
+|possam afetar o projeto ou parte dele. Criação dos arquivos 	|
+|teste de entrada.												|
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 14/09		|		   ~3:00		|  	   Revisar projetos		|
+|		    	  Descrição da Tarefa Realizada					|
+|Criação do Modelo conceitual das estruturas principais na forma| 
+|de diagramas com setas de forma a facilitar o entendimento		|
+|coletivo do projeto no decorrer da implementação.				|
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 15/09		|		   ~2:30		|   	Codificar módulo	|
+|		    	  Descrição da Tarefa Realizada					|
+|Codificação da definição do modulo calendario.					|
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 16/09		|		   ~3:00		|  	Revisar especificações	|
+|		    	  Descrição da Tarefa Realizada					|
+|Revisamento geral do projeto visando a construção dos casos de |
+|teste a serem redigidos de forma produtiva e progressiva.		|
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 16/09		|		   ~3:00		|  	Redigir casos de teste	|
+|		    	  Descrição da Tarefa Realizada					|
+|Criação dos casos de teste mais fundamentais visando a 		|
+|prevenção de funcionamentos incorretos das funções principais. |
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 17/09		|		   ~4:30		|   	Codificar módulo	|
+|		    	  Descrição da Tarefa Realizada					|
+|Implementação do modulo calendario.							|
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 17/09		|		   ~3:30		|   	Codificar módulo	|
+|		    	  Descrição da Tarefa Realizada					|
+|Declaração de todas funcoes do modulo calendario e criação das |
+|respectivas descrições de funcionalidades. Criação das 		|
+|descrições das estruturas que compoem o modulo e renomeação das|
+|mesmas.														|
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 18/09		|		   ~4:00		|   Revisar especificações	|
+|		    	  Descrição da Tarefa Realizada					|
+|Criação de algoritmo para a total reformulação do modo de		|
+|funcionamento do modulo calendario para atender as necessidades|
+|de casos especificos de entrada do programa.					|
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 19/09		|		   ~4:00		|  Revisar código do módulo	|
+|		    	  Descrição da Tarefa Realizada					|
+|Implementação do algoritmo criado no dia anterior e alteração  |
+|nas funções que iriam afetar a nova lógica.					|
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 20/09		|		   ~4:00		|  Revisar código do módulo	|
+|		    	  Descrição da Tarefa Realizada					|
+|Revisado o código de todos os módulos afetados pelo módulo 	|
+|calendario depois de alteração impactante realizada no modo de |
+|funcionamento do mesmo.
+
+| Data		|    Horas Trabalhadas	|         Tipo Tarefa		|
+| 21/09		|		   ~4:00		|  Revisar código do módulo	|
+|		    	  Descrição da Tarefa Realizada					|
+|Correção de todos os erros com exceção do "controletempo" 		|
+|gerados após a implementação do módulo de persistência e 		|
+|agrupamento das funcionalidades do programa.					|
+
+
+
+
+
+
+
+
+
+
+
+
+

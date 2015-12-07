@@ -1,0 +1,2 @@
+all:
+	splint localidades_persistencia.c localidades_persistencia.h localidades_leitura.c localidades_leitura.h localidades_tratamento.c localidades_tratamento.h main.c -weak +infloops +compdef +sysdirerrors

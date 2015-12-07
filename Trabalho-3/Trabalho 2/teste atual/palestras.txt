@@ -1,0 +1,16 @@
+Nome: Programação competitiva.
+Palestrante: Karl Marx.
+Tema: Computacão.
+Duracao: 1:00h.
+Nome: Marxismo aplicado a linguagem de sinais.
+Palestrante: Henry Ford.
+Tema: Sei la.
+Duracao: 1:00h.
+Nome: Lingua Japonesa.
+Palestrante: Xing Ling Yao.
+Tema: Nao pode ser traduzido.
+Duracao: 1:00h.
+Nome: Principios de Computação grafica.
+Palestrante: Jośe Ralha.
+Tema: Computação.
+Duracao: 1:00h.

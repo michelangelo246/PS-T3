@@ -1,0 +1,151 @@
+\hypertarget{localidades__leitura_8h}{}\section{Referência do Arquivo localidades\+\_\+leitura.\+h}
+\label{localidades__leitura_8h}\index{localidades\+\_\+leitura.\+h@{localidades\+\_\+leitura.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+\subsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_tipo___local}{Tipo\+\_\+\+Local}
+\item 
+struct \hyperlink{struct_tipo___disponibilidade___local}{Tipo\+\_\+\+Disponibilidade\+\_\+\+Local}
+\end{DoxyCompactItemize}
+\subsection*{Definições de Tipos}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_tipo___local}{Tipo\+\_\+\+Local} \hyperlink{localidades__leitura_8h_a5bed0a3407543c77b924d6a85135486e}{tipo\+\_\+local}
+\item 
+typedef struct \hyperlink{struct_tipo___disponibilidade___local}{Tipo\+\_\+\+Disponibilidade\+\_\+\+Local} \hyperlink{localidades__leitura_8h_a99e789acdc4075a6d74598a9630f7296}{tipo\+\_\+disponibilidade\+\_\+local}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{localidades__leitura_8h_a5bed0a3407543c77b924d6a85135486e}{tipo\+\_\+local} $\ast$ \hyperlink{localidades__leitura_8h_a0af5b8f19bb6a4759fc420b411845e66}{Inicia\+\_\+\+Ponteiro} (void)
+\begin{DoxyCompactList}\small\item\em Descricao\+: retorna um ponteiro inicializado para o inicio da lista de localidades. \end{DoxyCompactList}\item 
+void \hyperlink{localidades__leitura_8h_a3561081df4787922246853887611993e}{Le\+\_\+\+Nome} (F\+I\+L\+E $\ast$arq, \hyperlink{localidades__leitura_8h_a5bed0a3407543c77b924d6a85135486e}{tipo\+\_\+local} $\ast$$\ast$p1)
+\begin{DoxyCompactList}\small\item\em Descricao\+: baseado nas informacoes recebidas faz a leitura da linha do arquivo que contem o nome do local passando a informacao para o respectivo campo do no sendo preenchido. \end{DoxyCompactList}\item 
+void \hyperlink{localidades__leitura_8h_a1b421763dc0848176066f6870967a55e}{Le\+\_\+\+Endereco} (F\+I\+L\+E $\ast$arq, \hyperlink{localidades__leitura_8h_a5bed0a3407543c77b924d6a85135486e}{tipo\+\_\+local} $\ast$$\ast$p1)
+\begin{DoxyCompactList}\small\item\em Descricao\+: baseado nas informacoes recebidas faz a leitura da linha do arquivo que contem o endereco do local passando a informacao para o respectivo campo do no sendo preenchido. \end{DoxyCompactList}\item 
+void \hyperlink{localidades__leitura_8h_adf316ea35f258b10906d6434f6f72ba5}{Le\+\_\+\+Disponibilidade\+\_\+\+Bruta} (F\+I\+L\+E $\ast$arq, \hyperlink{localidades__leitura_8h_a5bed0a3407543c77b924d6a85135486e}{tipo\+\_\+local} $\ast$$\ast$p1, int $\ast$sair)
+\begin{DoxyCompactList}\small\item\em Descricao\+: baseado nas informacoes recebidas faz a leitura do arquivo que contem a disponibilidade do local passando a informacao para o respectivo campo do no sendo preenchido. \end{DoxyCompactList}\item 
+\hyperlink{localidades__leitura_8h_a5bed0a3407543c77b924d6a85135486e}{tipo\+\_\+local} $\ast$ \hyperlink{localidades__leitura_8h_ac313059271b18216b58548ee1a128525}{Le\+\_\+\+Localidade} (void)
+\begin{DoxyCompactList}\small\item\em Descricao\+: Cria uma lista com as informacoes das localidades ainda nao tratadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Definições dos tipos}
+\hypertarget{localidades__leitura_8h_a99e789acdc4075a6d74598a9630f7296}{}\index{localidades\+\_\+leitura.\+h@{localidades\+\_\+leitura.\+h}!tipo\+\_\+disponibilidade\+\_\+local@{tipo\+\_\+disponibilidade\+\_\+local}}
+\index{tipo\+\_\+disponibilidade\+\_\+local@{tipo\+\_\+disponibilidade\+\_\+local}!localidades\+\_\+leitura.\+h@{localidades\+\_\+leitura.\+h}}
+\subsubsection[{tipo\+\_\+disponibilidade\+\_\+local}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Tipo\+\_\+\+Disponibilidade\+\_\+\+Local} {\bf tipo\+\_\+disponibilidade\+\_\+local}}\label{localidades__leitura_8h_a99e789acdc4075a6d74598a9630f7296}
+\hypertarget{localidades__leitura_8h_a5bed0a3407543c77b924d6a85135486e}{}\index{localidades\+\_\+leitura.\+h@{localidades\+\_\+leitura.\+h}!tipo\+\_\+local@{tipo\+\_\+local}}
+\index{tipo\+\_\+local@{tipo\+\_\+local}!localidades\+\_\+leitura.\+h@{localidades\+\_\+leitura.\+h}}
+\subsubsection[{tipo\+\_\+local}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Tipo\+\_\+\+Local} {\bf tipo\+\_\+local}}\label{localidades__leitura_8h_a5bed0a3407543c77b924d6a85135486e}
+
+
+\subsection{Funções}
+\hypertarget{localidades__leitura_8h_a0af5b8f19bb6a4759fc420b411845e66}{}\index{localidades\+\_\+leitura.\+h@{localidades\+\_\+leitura.\+h}!Inicia\+\_\+\+Ponteiro@{Inicia\+\_\+\+Ponteiro}}
+\index{Inicia\+\_\+\+Ponteiro@{Inicia\+\_\+\+Ponteiro}!localidades\+\_\+leitura.\+h@{localidades\+\_\+leitura.\+h}}
+\subsubsection[{Inicia\+\_\+\+Ponteiro(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tipo\+\_\+local}$\ast$ Inicia\+\_\+\+Ponteiro (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{localidades__leitura_8h_a0af5b8f19bb6a4759fc420b411845e66}
+
+
+Descricao\+: retorna um ponteiro inicializado para o inicio da lista de localidades. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+ponteiro de local com campos iniciados 
+\end{DoxyReturn}
+\hypertarget{localidades__leitura_8h_adf316ea35f258b10906d6434f6f72ba5}{}\index{localidades\+\_\+leitura.\+h@{localidades\+\_\+leitura.\+h}!Le\+\_\+\+Disponibilidade\+\_\+\+Bruta@{Le\+\_\+\+Disponibilidade\+\_\+\+Bruta}}
+\index{Le\+\_\+\+Disponibilidade\+\_\+\+Bruta@{Le\+\_\+\+Disponibilidade\+\_\+\+Bruta}!localidades\+\_\+leitura.\+h@{localidades\+\_\+leitura.\+h}}
+\subsubsection[{Le\+\_\+\+Disponibilidade\+\_\+\+Bruta(\+F\+I\+L\+E $\ast$arq, tipo\+\_\+local $\ast$$\ast$p1, int $\ast$sair)}]{\setlength{\rightskip}{0pt plus 5cm}void Le\+\_\+\+Disponibilidade\+\_\+\+Bruta (
+\begin{DoxyParamCaption}
+\item[{F\+I\+L\+E $\ast$}]{arq, }
+\item[{{\bf tipo\+\_\+local} $\ast$$\ast$}]{p1, }
+\item[{int $\ast$}]{sair}
+\end{DoxyParamCaption}
+)}\label{localidades__leitura_8h_adf316ea35f258b10906d6434f6f72ba5}
+
+
+Descricao\+: baseado nas informacoes recebidas faz a leitura do arquivo que contem a disponibilidade do local passando a informacao para o respectivo campo do no sendo preenchido. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em arq} & ptr para o arquivo de localidades \\
+\hline
+{\em p1} & ptr para o no sendo preenchido na lista \\
+\hline
+{\em sair} & ptr para o controlador do loop principal da funcao Le\+\_\+\+Localidade\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+void 
+\end{DoxyReturn}
+\hypertarget{localidades__leitura_8h_a1b421763dc0848176066f6870967a55e}{}\index{localidades\+\_\+leitura.\+h@{localidades\+\_\+leitura.\+h}!Le\+\_\+\+Endereco@{Le\+\_\+\+Endereco}}
+\index{Le\+\_\+\+Endereco@{Le\+\_\+\+Endereco}!localidades\+\_\+leitura.\+h@{localidades\+\_\+leitura.\+h}}
+\subsubsection[{Le\+\_\+\+Endereco(\+F\+I\+L\+E $\ast$arq, tipo\+\_\+local $\ast$$\ast$p1)}]{\setlength{\rightskip}{0pt plus 5cm}void Le\+\_\+\+Endereco (
+\begin{DoxyParamCaption}
+\item[{F\+I\+L\+E $\ast$}]{arq, }
+\item[{{\bf tipo\+\_\+local} $\ast$$\ast$}]{p1}
+\end{DoxyParamCaption}
+)}\label{localidades__leitura_8h_a1b421763dc0848176066f6870967a55e}
+
+
+Descricao\+: baseado nas informacoes recebidas faz a leitura da linha do arquivo que contem o endereco do local passando a informacao para o respectivo campo do no sendo preenchido. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em arq} & ptr para o arquivo de localidades \\
+\hline
+{\em p1} & ptr para o no sendo preenchido na lista\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+void 
+\end{DoxyReturn}
+\hypertarget{localidades__leitura_8h_ac313059271b18216b58548ee1a128525}{}\index{localidades\+\_\+leitura.\+h@{localidades\+\_\+leitura.\+h}!Le\+\_\+\+Localidade@{Le\+\_\+\+Localidade}}
+\index{Le\+\_\+\+Localidade@{Le\+\_\+\+Localidade}!localidades\+\_\+leitura.\+h@{localidades\+\_\+leitura.\+h}}
+\subsubsection[{Le\+\_\+\+Localidade(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tipo\+\_\+local}$\ast$ Le\+\_\+\+Localidade (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{localidades__leitura_8h_ac313059271b18216b58548ee1a128525}
+
+
+Descricao\+: Cria uma lista com as informacoes das localidades ainda nao tratadas. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+ptr para o inicio da lista de localidades com informacoes brutas 
+\end{DoxyReturn}
+\hypertarget{localidades__leitura_8h_a3561081df4787922246853887611993e}{}\index{localidades\+\_\+leitura.\+h@{localidades\+\_\+leitura.\+h}!Le\+\_\+\+Nome@{Le\+\_\+\+Nome}}
+\index{Le\+\_\+\+Nome@{Le\+\_\+\+Nome}!localidades\+\_\+leitura.\+h@{localidades\+\_\+leitura.\+h}}
+\subsubsection[{Le\+\_\+\+Nome(\+F\+I\+L\+E $\ast$arq, tipo\+\_\+local $\ast$$\ast$p1)}]{\setlength{\rightskip}{0pt plus 5cm}void Le\+\_\+\+Nome (
+\begin{DoxyParamCaption}
+\item[{F\+I\+L\+E $\ast$}]{arq, }
+\item[{{\bf tipo\+\_\+local} $\ast$$\ast$}]{p1}
+\end{DoxyParamCaption}
+)}\label{localidades__leitura_8h_a3561081df4787922246853887611993e}
+
+
+Descricao\+: baseado nas informacoes recebidas faz a leitura da linha do arquivo que contem o nome do local passando a informacao para o respectivo campo do no sendo preenchido. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em arq} & ptr para o arquivo de localidades \\
+\hline
+{\em p1} & ptr para o no sendo preenchido na lista\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+void 
+\end{DoxyReturn}

@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Componente de localidade: Referência do Arquivo localidades_tratamento.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ico-localizacao.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Componente de localidade
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+   <div id="projectbrief">Modulos responsaveis pela organização das informações das localidades.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;Dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo localidades_tratamento.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="localidades__tratamento_8h_source.html">localidades_tratamento.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a98d3c5ae406f78af386478668df9c381"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="localidades__tratamento_8c.html#a98d3c5ae406f78af386478668df9c381">Pula_Espaco</a> (FILE *arq)</td></tr>
+<tr class="memdesc:a98d3c5ae406f78af386478668df9c381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descricao: consome um caractere (' ' no caso.) do arquivo recebido.  <a href="#a98d3c5ae406f78af386478668df9c381">Mais...</a><br /></td></tr>
+<tr class="separator:a98d3c5ae406f78af386478668df9c381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a7af3a69f90f6f4ae1d6b67a89a5d68"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="localidades__tratamento_8c.html#a4a7af3a69f90f6f4ae1d6b67a89a5d68">pegaValor</a> (FILE *arq)</td></tr>
+<tr class="memdesc:a4a7af3a69f90f6f4ae1d6b67a89a5d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descricao: recebe um arquivo apontando para: um caractere antes de uma sequencia de numeros que vao ser processados e retornados como um inteiro, encerra a leitura desses caracteres identificados como numero quando encontra um caractere terminador: '/',',',':','-','.',';' ou EOF.  <a href="#a4a7af3a69f90f6f4ae1d6b67a89a5d68">Mais...</a><br /></td></tr>
+<tr class="separator:a4a7af3a69f90f6f4ae1d6b67a89a5d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fd4338085ee6c1443803f29b88ee1b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="localidades__tratamento_8c.html#a5fd4338085ee6c1443803f29b88ee1b3">Analisa_Bissexto</a> (int ano)</td></tr>
+<tr class="memdesc:a5fd4338085ee6c1443803f29b88ee1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descricao: recebe um ano e verifica se esse e bissexto ou nao.  <a href="#a5fd4338085ee6c1443803f29b88ee1b3">Mais...</a><br /></td></tr>
+<tr class="separator:a5fd4338085ee6c1443803f29b88ee1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc149ee5a464eaf609e40f366053ec0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="localidades__tratamento_8c.html#a7cc149ee5a464eaf609e40f366053ec0">Ultimo_Dia_Mes</a> (int mes, int ano)</td></tr>
+<tr class="memdesc:a7cc149ee5a464eaf609e40f366053ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descricao: recebe um inteiro que representa o mes [1-12] e retorna a quantidade de dias que aquele mes tem, tratando casos de ano bissexto.  <a href="#a7cc149ee5a464eaf609e40f366053ec0">Mais...</a><br /></td></tr>
+<tr class="separator:a7cc149ee5a464eaf609e40f366053ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e639e5cf0e39543d3b13b8aa885ca7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="localidades__tratamento_8c.html#a9e639e5cf0e39543d3b13b8aa885ca7e">Formata_Dia</a> (<a class="el" href="localidades__tratamento_8h.html#ada5ebaf0a0fd070b236f91aae8c93a47">tipo_data_info</a> *data)</td></tr>
+<tr class="memdesc:a9e639e5cf0e39543d3b13b8aa885ca7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descricao: Recebe o ptr contendo o dia o mes e o ano de interesse e calcula (considerando também os anos bissextos) qual dia do ano esses dados representam.  <a href="#a9e639e5cf0e39543d3b13b8aa885ca7e">Mais...</a><br /></td></tr>
+<tr class="separator:a9e639e5cf0e39543d3b13b8aa885ca7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe09e8302b5a50e9b6d9cc76d3fab4c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="localidades__tratamento_8c.html#a3fe09e8302b5a50e9b6d9cc76d3fab4c">Dia_Semana</a> (<a class="el" href="localidades__tratamento_8h.html#ada5ebaf0a0fd070b236f91aae8c93a47">tipo_data_info</a> *data)</td></tr>
+<tr class="memdesc:a3fe09e8302b5a50e9b6d9cc76d3fab4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descricao: baseado nas informacoes recebidas, calcula o dia da semana correspondente.  <a href="#a3fe09e8302b5a50e9b6d9cc76d3fab4c">Mais...</a><br /></td></tr>
+<tr class="separator:a3fe09e8302b5a50e9b6d9cc76d3fab4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d0fed5d0b2f81f80660a58cbe20cd6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="localidades__tratamento_8c.html#aa4d0fed5d0b2f81f80660a58cbe20cd6">Numero_Semana</a> (char *dia_semana)</td></tr>
+<tr class="memdesc:aa4d0fed5d0b2f81f80660a58cbe20cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descricao: le a string do dia da semana e calcula o dia que ela representa [0-6].  <a href="#aa4d0fed5d0b2f81f80660a58cbe20cd6">Mais...</a><br /></td></tr>
+<tr class="separator:aa4d0fed5d0b2f81f80660a58cbe20cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2afba1d3d03c17d29c1e5e7f4e7d1191"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="localidades__tratamento_8c.html#a2afba1d3d03c17d29c1e5e7f4e7d1191">Estende_Disponibilidade</a> (<a class="el" href="localidades__leitura_8h.html#a99e789acdc4075a6d74598a9630f7296">tipo_disponibilidade_local</a> *p1_disp, <a class="el" href="localidades__leitura_8h.html#a99e789acdc4075a6d74598a9630f7296">tipo_disponibilidade_local</a> **pinicio_disp, <a class="el" href="localidades__tratamento_8h.html#ada5ebaf0a0fd070b236f91aae8c93a47">tipo_data_info</a> *data)</td></tr>
+<tr class="memdesc:a2afba1d3d03c17d29c1e5e7f4e7d1191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descricao: recebe um no da lista de disponibilidade com o campo data: 00, e expande as informacoes da disponibilidade para todos os dias da semana informado do mes recebido.  <a href="#a2afba1d3d03c17d29c1e5e7f4e7d1191">Mais...</a><br /></td></tr>
+<tr class="separator:a2afba1d3d03c17d29c1e5e7f4e7d1191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46be5b9ebf7b1c53cae751062fee3d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="localidades__leitura_8h.html#a5bed0a3407543c77b924d6a85135486e">tipo_local</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="localidades__tratamento_8c.html#aa46be5b9ebf7b1c53cae751062fee3d0">Trata_Localidade</a> (<a class="el" href="localidades__leitura_8h.html#a5bed0a3407543c77b924d6a85135486e">tipo_local</a> *pinicio)</td></tr>
+<tr class="memdesc:aa46be5b9ebf7b1c53cae751062fee3d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descricao: Trata as localidades da lista recebida, criando as disponibilidades pertencentes a cada local.  <a href="#aa46be5b9ebf7b1c53cae751062fee3d0">Mais...</a><br /></td></tr>
+<tr class="separator:aa46be5b9ebf7b1c53cae751062fee3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Funções</h2>
+<a class="anchor" id="a5fd4338085ee6c1443803f29b88ee1b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Analisa_Bissexto </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ano</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Descricao: recebe um ano e verifica se esse e bissexto ou nao. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ano</td><td>ano que se deseja verificar se e bissexto</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>1 caso o ano seja bissexto ou 0 caso contrario </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3fe09e8302b5a50e9b6d9cc76d3fab4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dia_Semana </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="localidades__tratamento_8h.html#ada5ebaf0a0fd070b236f91aae8c93a47">tipo_data_info</a> *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Descricao: baseado nas informacoes recebidas, calcula o dia da semana correspondente. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>ptr de struct com campos: dia, mes e ano</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>inteiro representando o dia da semana [0-6] </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2afba1d3d03c17d29c1e5e7f4e7d1191"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Estende_Disponibilidade </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="localidades__leitura_8h.html#a99e789acdc4075a6d74598a9630f7296">tipo_disponibilidade_local</a> *&#160;</td>
+          <td class="paramname"><em>p1_disp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="localidades__leitura_8h.html#a99e789acdc4075a6d74598a9630f7296">tipo_disponibilidade_local</a> **&#160;</td>
+          <td class="paramname"><em>pinicio_disp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="localidades__tratamento_8h.html#ada5ebaf0a0fd070b236f91aae8c93a47">tipo_data_info</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Descricao: recebe um no da lista de disponibilidade com o campo data: 00, e expande as informacoes da disponibilidade para todos os dias da semana informado do mes recebido. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dia_semana</td><td>p1_disp para no da lista de disponibilidade do local analisado </td></tr>
+    <tr><td class="paramname">pinicio_disp</td><td>ptr para o inicio da lista de disponibilidade </td></tr>
+    <tr><td class="paramname">data</td><td>ptr com as informacoes da data</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e639e5cf0e39543d3b13b8aa885ca7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Formata_Dia </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="localidades__tratamento_8h.html#ada5ebaf0a0fd070b236f91aae8c93a47">tipo_data_info</a> *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Descricao: Recebe o ptr contendo o dia o mes e o ano de interesse e calcula (considerando também os anos bissextos) qual dia do ano esses dados representam. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>ptr de struct com campos: dia, mes e ano</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>o dia do ano </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa4d0fed5d0b2f81f80660a58cbe20cd6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Numero_Semana </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dia_semana</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Descricao: le a string do dia da semana e calcula o dia que ela representa [0-6]. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dia_semana</td><td>cadeia de caracteres representando o dia da semana(ex:Seg)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>numero que representa o dia da semana lido </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4a7af3a69f90f6f4ae1d6b67a89a5d68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pegaValor </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>arq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Descricao: recebe um arquivo apontando para: um caractere antes de uma sequencia de numeros que vao ser processados e retornados como um inteiro, encerra a leitura desses caracteres identificados como numero quando encontra um caractere terminador: '/',',',':','-','.',';' ou EOF. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arq</td><td>ptr para um arquivo</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>retorna conversao da string lida para um inteiro </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a98d3c5ae406f78af386478668df9c381"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pula_Espaco </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>arq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Descricao: consome um caractere (' ' no caso.) do arquivo recebido. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arq</td><td>ptr para um arquivo</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa46be5b9ebf7b1c53cae751062fee3d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="localidades__leitura_8h.html#a5bed0a3407543c77b924d6a85135486e">tipo_local</a>* Trata_Localidade </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="localidades__leitura_8h.html#a5bed0a3407543c77b924d6a85135486e">tipo_local</a> *&#160;</td>
+          <td class="paramname"><em>pinicio</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Descricao: Trata as localidades da lista recebida, criando as disponibilidades pertencentes a cada local. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pinicio</td><td>ptr o inicio da lista de localidades ainda nao tratados</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7cc149ee5a464eaf609e40f366053ec0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ultimo_Dia_Mes </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ano</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Descricao: recebe um inteiro que representa o mes [1-12] e retorna a quantidade de dias que aquele mes tem, tratando casos de ano bissexto. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mes</td><td>mes do qual se deseja descobrir total de dias </td></tr>
+    <tr><td class="paramname">ano</td><td>ano para considerar o caso de ser bissexto</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>quantidade de dias do mes recebido </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

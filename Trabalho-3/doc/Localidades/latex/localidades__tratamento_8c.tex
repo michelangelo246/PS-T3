@@ -1,0 +1,207 @@
+\hypertarget{localidades__tratamento_8c}{}\section{Referência do Arquivo localidades\+\_\+tratamento.\+c}
+\label{localidades__tratamento_8c}\index{localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}}
+{\ttfamily \#include \char`\"{}localidades\+\_\+tratamento.\+h\char`\"{}}\\*
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{localidades__tratamento_8c_a98d3c5ae406f78af386478668df9c381}{Pula\+\_\+\+Espaco} (F\+I\+L\+E $\ast$arq)
+\begin{DoxyCompactList}\small\item\em Descricao\+: consome um caractere (\textquotesingle{} \textquotesingle{} no caso.) do arquivo recebido. \end{DoxyCompactList}\item 
+int \hyperlink{localidades__tratamento_8c_a4a7af3a69f90f6f4ae1d6b67a89a5d68}{pega\+Valor} (F\+I\+L\+E $\ast$arq)
+\begin{DoxyCompactList}\small\item\em Descricao\+: recebe um arquivo apontando para\+: um caractere antes de uma sequencia de numeros que vao ser processados e retornados como um inteiro, encerra a leitura desses caracteres identificados como numero quando encontra um caractere terminador\+: \textquotesingle{}/\textquotesingle{},\textquotesingle{},\textquotesingle{},\textquotesingle{}\+:\textquotesingle{},\textquotesingle{}-\/\textquotesingle{},\textquotesingle{}.\textquotesingle{},\textquotesingle{};\textquotesingle{} ou E\+O\+F. \end{DoxyCompactList}\item 
+int \hyperlink{localidades__tratamento_8c_a5fd4338085ee6c1443803f29b88ee1b3}{Analisa\+\_\+\+Bissexto} (int ano)
+\begin{DoxyCompactList}\small\item\em Descricao\+: recebe um ano e verifica se esse e bissexto ou nao. \end{DoxyCompactList}\item 
+int \hyperlink{localidades__tratamento_8c_a7cc149ee5a464eaf609e40f366053ec0}{Ultimo\+\_\+\+Dia\+\_\+\+Mes} (int mes, int ano)
+\begin{DoxyCompactList}\small\item\em Descricao\+: recebe um inteiro que representa o mes \mbox{[}1-\/12\mbox{]} e retorna a quantidade de dias que aquele mes tem, tratando casos de ano bissexto. \end{DoxyCompactList}\item 
+int \hyperlink{localidades__tratamento_8c_a9e639e5cf0e39543d3b13b8aa885ca7e}{Formata\+\_\+\+Dia} (\hyperlink{localidades__tratamento_8h_ada5ebaf0a0fd070b236f91aae8c93a47}{tipo\+\_\+data\+\_\+info} $\ast$data)
+\begin{DoxyCompactList}\small\item\em Descricao\+: Recebe o ptr contendo o dia o mes e o ano de interesse e calcula (considerando também os anos bissextos) qual dia do ano esses dados representam. \end{DoxyCompactList}\item 
+int \hyperlink{localidades__tratamento_8c_a3fe09e8302b5a50e9b6d9cc76d3fab4c}{Dia\+\_\+\+Semana} (\hyperlink{localidades__tratamento_8h_ada5ebaf0a0fd070b236f91aae8c93a47}{tipo\+\_\+data\+\_\+info} $\ast$data)
+\begin{DoxyCompactList}\small\item\em Descricao\+: baseado nas informacoes recebidas, calcula o dia da semana correspondente. \end{DoxyCompactList}\item 
+int \hyperlink{localidades__tratamento_8c_aa4d0fed5d0b2f81f80660a58cbe20cd6}{Numero\+\_\+\+Semana} (char $\ast$dia\+\_\+semana)
+\begin{DoxyCompactList}\small\item\em Descricao\+: le a string do dia da semana e calcula o dia que ela representa \mbox{[}0-\/6\mbox{]}. \end{DoxyCompactList}\item 
+void \hyperlink{localidades__tratamento_8c_a2afba1d3d03c17d29c1e5e7f4e7d1191}{Estende\+\_\+\+Disponibilidade} (\hyperlink{localidades__leitura_8h_a99e789acdc4075a6d74598a9630f7296}{tipo\+\_\+disponibilidade\+\_\+local} $\ast$p1\+\_\+disp, \hyperlink{localidades__leitura_8h_a99e789acdc4075a6d74598a9630f7296}{tipo\+\_\+disponibilidade\+\_\+local} $\ast$$\ast$pinicio\+\_\+disp, \hyperlink{localidades__tratamento_8h_ada5ebaf0a0fd070b236f91aae8c93a47}{tipo\+\_\+data\+\_\+info} $\ast$data)
+\begin{DoxyCompactList}\small\item\em Descricao\+: recebe um no da lista de disponibilidade com o campo data\+: 00, e expande as informacoes da disponibilidade para todos os dias da semana informado do mes recebido. \end{DoxyCompactList}\item 
+\hyperlink{localidades__leitura_8h_a5bed0a3407543c77b924d6a85135486e}{tipo\+\_\+local} $\ast$ \hyperlink{localidades__tratamento_8c_aa46be5b9ebf7b1c53cae751062fee3d0}{Trata\+\_\+\+Localidade} (\hyperlink{localidades__leitura_8h_a5bed0a3407543c77b924d6a85135486e}{tipo\+\_\+local} $\ast$pinicio)
+\begin{DoxyCompactList}\small\item\em Descricao\+: Trata as localidades da lista recebida, criando as disponibilidades pertencentes a cada local. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Funções}
+\hypertarget{localidades__tratamento_8c_a5fd4338085ee6c1443803f29b88ee1b3}{}\index{localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}!Analisa\+\_\+\+Bissexto@{Analisa\+\_\+\+Bissexto}}
+\index{Analisa\+\_\+\+Bissexto@{Analisa\+\_\+\+Bissexto}!localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}}
+\subsubsection[{Analisa\+\_\+\+Bissexto(int ano)}]{\setlength{\rightskip}{0pt plus 5cm}int Analisa\+\_\+\+Bissexto (
+\begin{DoxyParamCaption}
+\item[{int}]{ano}
+\end{DoxyParamCaption}
+)}\label{localidades__tratamento_8c_a5fd4338085ee6c1443803f29b88ee1b3}
+
+
+Descricao\+: recebe um ano e verifica se esse e bissexto ou nao. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em ano} & ano que se deseja verificar se e bissexto\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1 caso o ano seja bissexto ou 0 caso contrario 
+\end{DoxyReturn}
+\hypertarget{localidades__tratamento_8c_a3fe09e8302b5a50e9b6d9cc76d3fab4c}{}\index{localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}!Dia\+\_\+\+Semana@{Dia\+\_\+\+Semana}}
+\index{Dia\+\_\+\+Semana@{Dia\+\_\+\+Semana}!localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}}
+\subsubsection[{Dia\+\_\+\+Semana(tipo\+\_\+data\+\_\+info $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}int Dia\+\_\+\+Semana (
+\begin{DoxyParamCaption}
+\item[{{\bf tipo\+\_\+data\+\_\+info} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\label{localidades__tratamento_8c_a3fe09e8302b5a50e9b6d9cc76d3fab4c}
+
+
+Descricao\+: baseado nas informacoes recebidas, calcula o dia da semana correspondente. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em data} & ptr de struct com campos\+: dia, mes e ano\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+inteiro representando o dia da semana \mbox{[}0-\/6\mbox{]} 
+\end{DoxyReturn}
+\hypertarget{localidades__tratamento_8c_a2afba1d3d03c17d29c1e5e7f4e7d1191}{}\index{localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}!Estende\+\_\+\+Disponibilidade@{Estende\+\_\+\+Disponibilidade}}
+\index{Estende\+\_\+\+Disponibilidade@{Estende\+\_\+\+Disponibilidade}!localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}}
+\subsubsection[{Estende\+\_\+\+Disponibilidade(tipo\+\_\+disponibilidade\+\_\+local $\ast$p1\+\_\+disp, tipo\+\_\+disponibilidade\+\_\+local $\ast$$\ast$pinicio\+\_\+disp, tipo\+\_\+data\+\_\+info $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void Estende\+\_\+\+Disponibilidade (
+\begin{DoxyParamCaption}
+\item[{{\bf tipo\+\_\+disponibilidade\+\_\+local} $\ast$}]{p1\+\_\+disp, }
+\item[{{\bf tipo\+\_\+disponibilidade\+\_\+local} $\ast$$\ast$}]{pinicio\+\_\+disp, }
+\item[{{\bf tipo\+\_\+data\+\_\+info} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\label{localidades__tratamento_8c_a2afba1d3d03c17d29c1e5e7f4e7d1191}
+
+
+Descricao\+: recebe um no da lista de disponibilidade com o campo data\+: 00, e expande as informacoes da disponibilidade para todos os dias da semana informado do mes recebido. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em dia\+\_\+semana} & p1\+\_\+disp para no da lista de disponibilidade do local analisado \\
+\hline
+{\em pinicio\+\_\+disp} & ptr para o inicio da lista de disponibilidade \\
+\hline
+{\em data} & ptr com as informacoes da data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+void 
+\end{DoxyReturn}
+\hypertarget{localidades__tratamento_8c_a9e639e5cf0e39543d3b13b8aa885ca7e}{}\index{localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}!Formata\+\_\+\+Dia@{Formata\+\_\+\+Dia}}
+\index{Formata\+\_\+\+Dia@{Formata\+\_\+\+Dia}!localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}}
+\subsubsection[{Formata\+\_\+\+Dia(tipo\+\_\+data\+\_\+info $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}int Formata\+\_\+\+Dia (
+\begin{DoxyParamCaption}
+\item[{{\bf tipo\+\_\+data\+\_\+info} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\label{localidades__tratamento_8c_a9e639e5cf0e39543d3b13b8aa885ca7e}
+
+
+Descricao\+: Recebe o ptr contendo o dia o mes e o ano de interesse e calcula (considerando também os anos bissextos) qual dia do ano esses dados representam. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em data} & ptr de struct com campos\+: dia, mes e ano\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+o dia do ano 
+\end{DoxyReturn}
+\hypertarget{localidades__tratamento_8c_aa4d0fed5d0b2f81f80660a58cbe20cd6}{}\index{localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}!Numero\+\_\+\+Semana@{Numero\+\_\+\+Semana}}
+\index{Numero\+\_\+\+Semana@{Numero\+\_\+\+Semana}!localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}}
+\subsubsection[{Numero\+\_\+\+Semana(char $\ast$dia\+\_\+semana)}]{\setlength{\rightskip}{0pt plus 5cm}int Numero\+\_\+\+Semana (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{dia\+\_\+semana}
+\end{DoxyParamCaption}
+)}\label{localidades__tratamento_8c_aa4d0fed5d0b2f81f80660a58cbe20cd6}
+
+
+Descricao\+: le a string do dia da semana e calcula o dia que ela representa \mbox{[}0-\/6\mbox{]}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em dia\+\_\+semana} & cadeia de caracteres representando o dia da semana(ex\+:\+Seg)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+numero que representa o dia da semana lido 
+\end{DoxyReturn}
+\hypertarget{localidades__tratamento_8c_a4a7af3a69f90f6f4ae1d6b67a89a5d68}{}\index{localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}!pega\+Valor@{pega\+Valor}}
+\index{pega\+Valor@{pega\+Valor}!localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}}
+\subsubsection[{pega\+Valor(\+F\+I\+L\+E $\ast$arq)}]{\setlength{\rightskip}{0pt plus 5cm}int pega\+Valor (
+\begin{DoxyParamCaption}
+\item[{F\+I\+L\+E $\ast$}]{arq}
+\end{DoxyParamCaption}
+)}\label{localidades__tratamento_8c_a4a7af3a69f90f6f4ae1d6b67a89a5d68}
+
+
+Descricao\+: recebe um arquivo apontando para\+: um caractere antes de uma sequencia de numeros que vao ser processados e retornados como um inteiro, encerra a leitura desses caracteres identificados como numero quando encontra um caractere terminador\+: \textquotesingle{}/\textquotesingle{},\textquotesingle{},\textquotesingle{},\textquotesingle{}\+:\textquotesingle{},\textquotesingle{}-\/\textquotesingle{},\textquotesingle{}.\textquotesingle{},\textquotesingle{};\textquotesingle{} ou E\+O\+F. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em arq} & ptr para um arquivo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+retorna conversao da string lida para um inteiro 
+\end{DoxyReturn}
+\hypertarget{localidades__tratamento_8c_a98d3c5ae406f78af386478668df9c381}{}\index{localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}!Pula\+\_\+\+Espaco@{Pula\+\_\+\+Espaco}}
+\index{Pula\+\_\+\+Espaco@{Pula\+\_\+\+Espaco}!localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}}
+\subsubsection[{Pula\+\_\+\+Espaco(\+F\+I\+L\+E $\ast$arq)}]{\setlength{\rightskip}{0pt plus 5cm}void Pula\+\_\+\+Espaco (
+\begin{DoxyParamCaption}
+\item[{F\+I\+L\+E $\ast$}]{arq}
+\end{DoxyParamCaption}
+)}\label{localidades__tratamento_8c_a98d3c5ae406f78af386478668df9c381}
+
+
+Descricao\+: consome um caractere (\textquotesingle{} \textquotesingle{} no caso.) do arquivo recebido. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em arq} & ptr para um arquivo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+void 
+\end{DoxyReturn}
+\hypertarget{localidades__tratamento_8c_aa46be5b9ebf7b1c53cae751062fee3d0}{}\index{localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}!Trata\+\_\+\+Localidade@{Trata\+\_\+\+Localidade}}
+\index{Trata\+\_\+\+Localidade@{Trata\+\_\+\+Localidade}!localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}}
+\subsubsection[{Trata\+\_\+\+Localidade(tipo\+\_\+local $\ast$pinicio)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tipo\+\_\+local}$\ast$ Trata\+\_\+\+Localidade (
+\begin{DoxyParamCaption}
+\item[{{\bf tipo\+\_\+local} $\ast$}]{pinicio}
+\end{DoxyParamCaption}
+)}\label{localidades__tratamento_8c_aa46be5b9ebf7b1c53cae751062fee3d0}
+
+
+Descricao\+: Trata as localidades da lista recebida, criando as disponibilidades pertencentes a cada local. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em pinicio} & ptr o inicio da lista de localidades ainda nao tratados\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+void 
+\end{DoxyReturn}
+\hypertarget{localidades__tratamento_8c_a7cc149ee5a464eaf609e40f366053ec0}{}\index{localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}!Ultimo\+\_\+\+Dia\+\_\+\+Mes@{Ultimo\+\_\+\+Dia\+\_\+\+Mes}}
+\index{Ultimo\+\_\+\+Dia\+\_\+\+Mes@{Ultimo\+\_\+\+Dia\+\_\+\+Mes}!localidades\+\_\+tratamento.\+c@{localidades\+\_\+tratamento.\+c}}
+\subsubsection[{Ultimo\+\_\+\+Dia\+\_\+\+Mes(int mes, int ano)}]{\setlength{\rightskip}{0pt plus 5cm}int Ultimo\+\_\+\+Dia\+\_\+\+Mes (
+\begin{DoxyParamCaption}
+\item[{int}]{mes, }
+\item[{int}]{ano}
+\end{DoxyParamCaption}
+)}\label{localidades__tratamento_8c_a7cc149ee5a464eaf609e40f366053ec0}
+
+
+Descricao\+: recebe um inteiro que representa o mes \mbox{[}1-\/12\mbox{]} e retorna a quantidade de dias que aquele mes tem, tratando casos de ano bissexto. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em mes} & mes do qual se deseja descobrir total de dias \\
+\hline
+{\em ano} & ano para considerar o caso de ser bissexto\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+quantidade de dias do mes recebido 
+\end{DoxyReturn}

@@ -1,0 +1,19 @@
+
+Abrir terminal linux
+
+$cd [pasta_desejada]
+$git clone https://github.com/michelangelo246/PS-T3.git
+
+*obs: o git vai copiar todo o repositorio para dentro da pasta corrente (pasta_desejada).
+
+
+
+Depois dos comandos acima, SEMPRE que tiver arquivo novo ou alterado, abra o terminal na pasta que contem esses arquivos e digite os tres comandos abaixo:
+
+
+$git add .
+$git commit -m "mensagem"
+$git push
+
+
+**obs: a mensagem do comando commit deve estar entre aspas 

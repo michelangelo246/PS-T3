@@ -33,5 +33,6 @@ limpa:
 	rm *.o
 
 executa:
+	splint *.c -weak +infloops +compdef +sysdirerrors -preproc
 	./PESSOA palestrantes.txt
 

@@ -40,28 +40,6 @@ TRANTE_cabecalho *Cria_ListaPalestrantes( void ){
 }
 
 
-void Destroi_ListaPalestrantes( TRANTE_cabecalho **header_pointer ){
-
-    palestrante *aux;
-    
-    while( (*header_pointer)->qtde_palestrante > 1 ){
-
-        aux = (*header_pointer)->first;    /* salvo a referencia de quem sera apagado */
-        
-        (*header_pointer)->first = ((*header_pointer)->first)->pnext; /* vou para prox da lista */
-        ((*header_pointer)->first)->pprev = NULL;
-                
-        free(aux);
-        
-        (*header_pointer)->qtde_palestrante--;
-    }
-
-    free( (*header_pointer)->first );
-    free( (*header_pointer) );
-
-    return;
-}
-
 
 int ListaPalestrantes_Vazia( TRANTE_cabecalho *header ){
 
@@ -176,29 +154,6 @@ DISP_cabecalho *Cria_ListaDisponibilidades( void ){
     return header;
 }
 
-
-
-void Destroi_ListaDisponibilidades( DISP_cabecalho **header_pointer ){
-
-    disponibilidade *aux;
-    while( (*header_pointer)->qtde_disponibilidade > 1 ){
-
-        aux = (*header_pointer)->first;    /* salvo a referencia daquela que serah apagada */
-        
-        (*header_pointer)->first = ( (*header_pointer)->first )->pnext; /* vou para prox da lista */
-        ( (*header_pointer)->first )->pprev = NULL;
-        
-        free(aux);
-
-        (*header_pointer)->qtde_disponibilidade--;
-
-    }
-
-    free( (*header_pointer)->first );
-    free( *header_pointer );
-
-    return;
-}
 
 
 int ListaDisponibilidades_Vazia( DISP_cabecalho *header ){
@@ -445,6 +400,28 @@ Palestrante* Remove_Corrente_ListaPalestrantes(TRANTE_cabecalho header)
 }
 
 
+
+void Destroi_ListaPalestrantes( TRANTE_cabecalho **header_pointer ){
+
+    palestrante *aux;
+    
+    while( (*header_pointer)->qtde_palestrante > 1 ){
+
+        aux = (*header_pointer)->first;
+        
+        (*header_pointer)->first = ((*header_pointer)->first)->pnext;
+        ((*header_pointer)->first)->pprev = NULL;
+                
+        free(aux);
+        
+        (*header_pointer)->qtde_palestrante--;
+    }
+
+    free( (*header_pointer)->first );
+    free( (*header_pointer) );
+
+    return;
+}
 
 
 

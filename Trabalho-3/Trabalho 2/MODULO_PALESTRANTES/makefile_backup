@@ -2,31 +2,30 @@ all: palestrante limpa
 
 palestrante: auxiliar.o leitura.o tempo.o tratamento.o persistencia.o main.o
 	gcc -Wall auxiliar.o leitura.o tempo.o tratamento.o persistencia.o main.o -o PESSOA
-	splint *.c -weak +infloops +compdef +sysdirerrors -preproc ->relatorio_splint_palestrantes.txt
 
 auxiliar.o: TRANTE_auxiliar.c TRANTE_auxiliar.h
 	gcc -Wall  -c TRANTE_auxiliar.c -o auxiliar.o
-	
+	splint TRANTE_auxiliar.c -weak +infloops +compdef +sysdirerrors -preproc
 
 leitura.o: TRANTE_leitura.c TRANTE_leitura.h
 	gcc -Wall  -c TRANTE_leitura.c -o leitura.o
-	
+	splint TRANTE_leitura.c -weak +infloops +compdef +sysdirerrors -preproc
 
 tempo.o:  TRANTE_tempo.c TRANTE_tempo.h
 	gcc -Wall  -c TRANTE_tempo.c -o tempo.o
-	
+	splint TRANTE_tempo.c -weak +infloops +compdef +sysdirerrors -preproc
 
 tratamento.o: TRANTE_tratamento.c TRANTE_tratamento.h
 	gcc -Wall  -c TRANTE_tratamento.c -o tratamento.o
-	
+	splint TRANTE_tratamento.c -weak +infloops +compdef +sysdirerrors -preproc
 
 persistencia.o: TRANTE_persistencia.c TRANTE_persistencia.h
 	gcc -Wall  -c TRANTE_persistencia.c -o persistencia.o
-	
+	splint TRANTE_persistencia.c -weak +infloops +compdef +sysdirerrors -preproc
 
 main.o: teste_TRANTE.c
 	gcc -Wall -c teste_TRANTE.c -o main.o
-	
+	splint teste_TRANTE.c -weak +infloops +compdef +sysdirerrors -preproc
 
 
 limpa:

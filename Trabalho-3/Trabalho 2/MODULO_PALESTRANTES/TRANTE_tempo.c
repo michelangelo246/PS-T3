@@ -61,8 +61,8 @@ int quebra_data( char *data_completa, struct tm **data_quebrada ){
 int DiaHoje(struct tm **hoje){
     
     time_t Segundos;
-	time(&Segundos); /*<! Passa para a variável a hora atual em segundos. */
-	(*hoje) = localtime(&Segundos); /*!< Converte os segundos para o formato de horas. */
+    time(&Segundos); /*<! Passa para a variável a hora atual em segundos. */
+    (*hoje) = localtime(&Segundos); /*!< Converte os segundos para o formato de horas. */
 
     
     if( (*hoje) == NULL ){

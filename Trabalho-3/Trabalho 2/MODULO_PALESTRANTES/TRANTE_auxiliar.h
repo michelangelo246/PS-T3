@@ -113,8 +113,6 @@ TRANTE_cabecalho *Cria_ListaPalestrantes( void );
 */
 
 
-void Destroi_ListaPalestrantes( TRANTE_cabecalho **header_pointer );
-
 int ListaPalestrantes_Vazia( TRANTE_cabecalho *header );
 /* Funcao ListaPalestrantes_Vazia. 
     Entrada: ponteiro cabecalho para lista de palestrantes
@@ -200,8 +198,6 @@ DISP_cabecalho *Cria_ListaDisponibilidades( void );
 */
     
 
-
-void Destroi_ListaDisponibilidades( DISP_cabecalho **header_pointer );
 
 int ListaDisponibilidades_Vazia( DISP_cabecalho *header );
 /* Funcao ListaDisponibilidades_Vazia. 

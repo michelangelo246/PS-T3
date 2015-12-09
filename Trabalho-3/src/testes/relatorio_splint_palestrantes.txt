@@ -1,0 +1,12 @@
+Command Line: Unrecognized option: -
+  A flag is not recognized or used in an incorrect way (Use -badflag to inhibit
+  warning)
+TRANTE_leitura.c: (in function Le_palestrantes)
+TRANTE_leitura.c:80:49: Unrecognized identifier: strdup
+  Identifier used in code has not been declared. (Use -unrecog to inhibit
+  warning)
+TRANTE_leitura.c:84:59: Passed storage *novo_palestrante contains 2 undefined
+                           fields: pnext, pprev
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)

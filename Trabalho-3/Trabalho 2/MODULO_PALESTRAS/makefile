@@ -1,10 +1,15 @@
+programa: palestra.o lista_palestras.o palestras_leitura.o persistencia_palestras.o tratapalestras.o
+	splint *.c -weak +infloops +compdef +sysdirerrors -preproc ->relatorio_splint_palestras.txt
+
 palestra.o: palestra.c palestra.h
 	gcc -c palestra.c
-lista_palestras.o: lista_palestras.h lista_palestras.c
+lista_palestras.o: 
 	gcc -c lista_palestras.c
-palestras_leitura.o: palestras_leitura.c palestras_leitura.header
+palestras_leitura.o: 
 	gcc -c palestras_leitura.c
-persistencia_palestras.o: persistencia_palestras.c persistencia_palestras.h
+persistencia_palestras.o: 
 	gcc -c persistencia_palestras.c
-tratapalestras.o: tratapalestras.c tratapalestras.h
+tratapalestras.o:
 	gcc -c tratapalestras.c
+
+
